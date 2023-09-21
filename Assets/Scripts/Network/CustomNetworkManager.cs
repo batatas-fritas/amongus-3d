@@ -8,16 +8,4 @@ public class CustomNetworkManager : NetworkManager
         base.OnStartClient();
         Debug.Log("Client starting...");
     }
-
-    public override void OnStartServer()
-    {
-        base.OnStartServer();
-        Debug.Log("Server starting...");
-    }
-
-    public override void OnStartHost()
-    {
-        base.OnStartHost();
-        Debug.Log("Host starting...");
-    }
 }

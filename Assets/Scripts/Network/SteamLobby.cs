@@ -16,9 +16,6 @@ public class SteamLobby : MonoBehaviour
 
     private CustomNetworkManager Manager;
 
-    public GameObject HostButton;
-
-    public TMP_Text LobbyNameText;
 
     private void Start()
     {
@@ -59,7 +56,6 @@ public class SteamLobby : MonoBehaviour
 
     private void OnLobbyEntered(LobbyEnter_t callback)
     {
-        HostButton.SetActive(false);
         CurrentLobbyID = callback.m_ulSteamIDLobby;
 
         if (NetworkServer.active) return;
